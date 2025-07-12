@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+
+# swww init
+
+swww img -- -b
+
+hellwal -i "$1"
+
+wal -i "$1"
+
+# python /home/boinker/.cache/material-you/c.py
+# python /home/boinker/.cache/material-you/c1.py
+# python /home/boinker/.cache/material-you/c2.py
+# python /home/boinker/.cache/material-you/c3.py
+#
+# cp -f .cache/material-you/colors.json .cache/wal/
+# cp -f .cache/material-you/colors.css .cache/wal/
+# cp -f .cache/material-you/colors .cache/wal/
+#
+# wal-telegram -r
+python /home/boinker/.config/hypr/scripts/kitty-colors/kitty-dark.py

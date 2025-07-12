@@ -1,0 +1,23 @@
+#!/bin/bash
+ 
+# SAVEDIR=~/Pictures/Screenshots
+# mkdir -p -- "$SAVEDIR"
+# FILENAME="$SAVEDIR/$(date +'%Y-%m-%d-%H%M%S_screenshot.png')"
+# EXPENDED_FILENAME="${FILENAME/#\~/$HOME}"
+#
+# grim -g "$(slurp)" "$EXPENDED_FILENAME"
+# swappy -f "$EXPENDED_FILENAME" -o "$EXPENDED_FILENAME"
+#
+# wl-copy < "$EXPENDED_FILENAME"
+# notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$EXPENDED_FILENAME"
+ 
+#!/bin/bash
+
+# Take a screenshot and copy to clipboard without saving
+grim -g "$(slurp)" - | wl-copy
+
+# Open Swappy for editing (user can save manually if needed)
+wl-paste | swappy -f -
+
+# Send a notification
+notify-send "Screenshot" "Screenshot copied to clipboard."
