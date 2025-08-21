@@ -17,6 +17,7 @@ alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long li
 alias ld='eza -lhD --icons=auto' # long list dirs
 alias lt='eza --icons=auto --tree' # list folder as tree
 alias vc='code'
+alias syu='sudo pacman -Syu' #updating system
 
 # Handy change dir shortcuts
 abbr .. 'cd ..'
@@ -28,7 +29,4 @@ abbr .5 'cd ../../../../..'
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 abbr mkdir 'mkdir -p'
 
-# Added by LM Studio CLI (lms)
-set -gx PATH $PATH /home/boinker/.lmstudio/bin
-# End of LM Studio CLI section
 
